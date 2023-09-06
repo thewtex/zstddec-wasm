@@ -1,8 +1,8 @@
 {
   "name": "@thewtex/zstddec",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ZSTD (Zstandard) decoder for Web and Node.js, using WebAssembly",
-  "repository": "github:donmccurdy/zstddec",
+  "repository": "github:thewtex/zstddec-wasm",
   "type": "module",
   "exports": {
     "types": "dist/zstddec.d.ts",
