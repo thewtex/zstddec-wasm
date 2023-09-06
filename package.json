@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "ZSTD (Zstandard) decoder for Web and Node.js, using WebAssembly",
   "repository": "github:donmccurdy/zstddec",
+  "type": "module",
+  "exports": {
+    "types": "dist/zstddec.d.ts",
+    "require": "./dist/zstddec.js",
+    "default": "./dist/zstddec.modern.js"
+  },
   "main": "dist/zstddec.js",
   "module": "dist/zstddec.modern.js",
   "source": "zstddec.ts",
