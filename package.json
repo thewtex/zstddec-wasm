@@ -6,10 +6,10 @@
   "type": "module",
   "exports": {
     "types": "dist/zstddec.d.ts",
-    "require": "./dist/zstddec.js",
+    "require": "./dist/zstddec.cjs",
     "default": "./dist/zstddec.modern.js"
   },
-  "main": "dist/zstddec.js",
+  "main": "dist/zstddec.cjs",
   "module": "dist/zstddec.modern.js",
   "source": "zstddec.ts",
   "types": "dist/zstddec.d.ts",
@@ -17,8 +17,8 @@
     "dist": "microbundle --format modern,cjs",
     "watch": "microbundle watch --format modern,cjs",
     "test": "npm run test:node && npm run test:browser",
-    "test:node": "tape *.test.js | tap-spec",
-    "test:browser": "browserify *.test.js | tape-run | tap-spec",
+    "test:node": "tape *.test.cjs | tap-spec",
+    "test:browser": "browserify *.test.cjs | tape-run | tap-spec",
     "preversion": "npm run dist && npm run test",
     "postversion": "git push && git push --tags && npm publish"
   },
